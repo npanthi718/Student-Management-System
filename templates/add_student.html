@@ -1,0 +1,35 @@
+<!-- templates/add_student.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add New Student</h1>
+        <form action="/add_student" method="POST" class="student-form">
+            <label for="student_name">Name:</label>
+            <input type="text" id="student_name" name="student_name" required>
+            
+            <label for="prn">PRN:</label>
+            <input type="text" id="prn" name="prn" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact" required>
+            
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course" required>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <button type="submit">Add Student</button>
+        </form>
+    </div>
+</body>
+</html>
